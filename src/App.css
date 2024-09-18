@@ -1,0 +1,170 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the dropdown button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown button text */
+.dropdown-button {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Center the SVGs and text */
+  gap: 8px;  /* Space between SVGs and text */
+  padding: 3px 3px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the button */
+}
+
+.icon-left, .icon-right {
+  margin: 0;
+}
+
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none; /* Hide by default */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px; /* Adjust width as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  top: 100%; /* Position below the button */
+  left: 0;
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+/* Container for grouping and sorting options */
+.dropdown-content .option-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add spacing between dropdowns */
+}
+
+/* Style for the labels and dropdowns */
+.dropdown-content label {
+  margin-right: 10px; /* Spacing between label and dropdown */
+  white-space: nowrap; /* Prevent label from wrapping */
+}
+
+.dropdown-content select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  flex: 1;
+}
+
+.panel {
+  display: flex;
+  justify-content: flex-start;  /* Align button to the left */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: transparent;  /* No fill color */
+  width: 5000px;
+  height: 40px;  /* Adjust the height */
+}
+
+.board-container {
+  display: flex;
+  justify-content: flex-start; /* Align columns to the left, reducing spacing */
+  padding: 20px;
+  gap: 10px;  /* Add a small gap between columns */
+}
+
+.column {
+  width: 4.7%;  /* Adjust width slightly to account for gap */
+  background-color: #f9f9f9;
+  margin-right: 10px;  /* Reduce space between columns */
+}
+
+.column h2 {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.heading {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between left and right items */
+  margin: 0 10px; /* Add horizontal margins to indent content */
+}
+
+.right-icons {
+  display: flex;
+  gap: 8px; /* Adjust space between the icons */
+}
+
+.heading-content {
+  display: flex;
+  align-items: center; /* Align the text and the first icon vertically */
+}
+
+.heading-icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 12px; /* Add space between the image and the heading */
+}
+
+h2 {
+  margin: 0;
+}
+
+
+.task-box {
+  font-size: 12px;
+  border: 1px solid #ccc; /* Outline */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+  padding: 10px; /* Space inside the box */
+  margin-bottom: 10px; /* Space between boxes */
+}
+
+.task-header {
+  margin-bottom: -2px; /* Space between header and content */
+}
+
+.task-label {
+  display: block;
+  font-weight: bold; /* Bold text */
+  margin-bottom: 5px; /* Space between label and content */
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between items */
+}
+
+.task-request {
+  display: flex;
+  align-items: center; /* Align text and icon vertically */
+  margin-top: -5px;
+}
+
+.request-icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 8px; /* Space between icon and text */
+}
